@@ -19,18 +19,48 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
     else if (matcherType.compare("MAT_FLANN") == 0)
     {
         // ...
+        if (descSource.type() != CV_32F)
+        { // OpenCV bug workaround : convert binary descriptors to floating point due to a bug in current OpenCV implementation
+            descSource.convertTo(descSource, CV_32F);
+            descRef.convertTo(descRef, CV_32F);
+        }
+
+        //... TODO : implement FLANN matching
+        cout << "FLANN matching";
+        matcher = cv::DescriptorMatcher::create(cv::DescriptorMatcher::FLANNBASED);
     }
 
     // perform matching task
     if (selectorType.compare("SEL_NN") == 0)
     { // nearest neighbor (best match)
-
+        double t = (double)cv::getTickCount();
         matcher->match(descSource, descRef, matches); // Finds the best match for each descriptor in desc1
+        t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
+        cout << " (NN) with n=" << matches.size() << " matches in " << 1000 * t / 1.0 << " ms" << endl;
+
+        //matcher->match(descSource, descRef, matches); // Finds the best match for each descriptor in desc1
     }
     else if (selectorType.compare("SEL_KNN") == 0)
     { // k nearest neighbors (k=2)
 
-        // ...
+        // k nearest neighbors (k=2)
+        std::vector<std::vector<cv::DMatch>> knn_matches;
+        // TODO : implement k-nearest-neighbor matching
+        double t = (double)cv::getTickCount();
+        matcher->knnMatch(descSource, descRef, knn_matches,2); // Finds the best match for each descriptor in desc1
+        t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
+        cout << " (KNN) with n=" << knn_matches.size() << " matches in " << 1000 * t / 1.0 << " ms" << endl;
+
+        // TODO : filter matches using descriptor distance ratio test
+        const float ratio_thresh = 0.8f;
+      
+        for(size_t it =0;it<knn_matches.size();it++)
+        {
+            if(knn_matches[it][0].distance<ratio_thresh*knn_matches[it][1].distance)
+            {
+                matches.push_back(knn_matches[it][0]);
+            }
+        }
     }
 }
 
