@@ -245,7 +245,7 @@ void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std:
         t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
         cout << detectorType << " detection with n=" << keypoints.size() << " keypoints in " << 1000 * t / 1.0 << " ms" << endl;
     }
-    else if (detectorType.compare("BRISK")=0)
+    else if (detectorType.compare("BRISK")==0)
     {
         int threshold = 30; //AGAST detection threshold score.
         int octaves = 3; //detection octaves. Use 0 to do single scale.
@@ -256,7 +256,7 @@ void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std:
         t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
         cout << detectorType << " detection with n=" << keypoints.size() << " keypoints in " << 1000 * t / 1.0 << " ms" << endl;
     }
-    else if (detectorType.compare("ORB")=0)
+    else if (detectorType.compare("ORB")==0)
     {
         int nfeatures = 500; //The maximum number of features to retain.
         float scaleFactor = 1.2f; //Pyramid decimation ratio, greater than 1. scaleFactor==2 means the classical pyramid, where each next level has 4x less pixels than the previous, but such a big scale factor will degrade feature matching scores dramatically. On the other hand, too close to 1 scale factor will mean that to cover certain scale range you will need more pyramid levels and so the speed will suffer.
@@ -274,7 +274,7 @@ void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std:
         t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
         cout << detectorType << " detection with n=" << keypoints.size() << " keypoints in " << 1000 * t / 1.0 << " ms" << endl;
     }
-    else if (detectorType.compare("AKAZE")=0)
+    else if (detectorType.compare("AKAZE")==0)
     {
         int descriptor_type = AKAZE::DESCRIPTOR_MLDB;//Type of the extracted descriptor: DESCRIPTOR_KAZE, DESCRIPTOR_KAZE_UPRIGHT, DESCRIPTOR_MLDB or DESCRIPTOR_MLDB_UPRIGHT.
         int descriptor_size = 0;//Size of the descriptor in bits. 0 -> Full size
@@ -289,7 +289,7 @@ void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std:
         t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
         cout << detectorType << " detection with n=" << keypoints.size() << " keypoints in " << 1000 * t / 1.0 << " ms" << endl;
     }
-    else if (detectorType.compare("SIFT")=0)
+    else if (detectorType.compare("SIFT")==0)
     {
         int nfeatures = 0;//	The number of best features to retain. The features are ranked by their scores (measured in SIFT algorithm as the local contrast)
         int nOctaveLayers = 3;// 	The number of layers in each octave. 3 is the value used in D. Lowe paper. The number of octaves is computed automatically from the image resolution.
