@@ -105,6 +105,18 @@ int main(int argc, const char *argv[])
         if (bFocusOnVehicle)
         {
             // ...
+            vector<cv::KeyPoint> keypoints_in_rect; 
+            for (auto point : keypoints) {
+                if (vehicleRect.contains(point.pt)) 
+                {
+                    point.size = <float>(round(point.size*10)/10);
+                    keypoints_in_rect.push_back(point);
+                }
+            }
+
+            keypoints.swap(keypoints_in_rect);
+            
+            cout << "Number of keypoint in ROI =" << keypoints.size() << endl;
         }
 
         //// EOF STUDENT ASSIGNMENT
