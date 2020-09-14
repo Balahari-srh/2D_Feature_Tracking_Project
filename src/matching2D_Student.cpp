@@ -13,13 +13,22 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
 
     if (matcherType.compare("MAT_BF") == 0)
     {
-        int normType = cv::NORM_HAMMING;
+        int normType;
+        if(descriptorType.compare("SIFT")==0)
+        {
+            normType=cv::NORM_L2;
+        }
+        else
+        {
+            normType=cv::NORM_HAMMING;
+        }
+        
         matcher = cv::BFMatcher::create(normType, crossCheck);
     }
     else if (matcherType.compare("MAT_FLANN") == 0)
     {
         // ...
-        if (descSource.type() != CV_32F)
+        if (descSource.type() != CV_32F||descRef.type()!=CV_32F)
         { // OpenCV bug workaround : convert binary descriptors to floating point due to a bug in current OpenCV implementation
             descSource.convertTo(descSource, CV_32F);
             descRef.convertTo(descRef, CV_32F);
@@ -84,7 +93,7 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
         //...
         int bytes = 32; //legth of the descriptor in bytes, valid values are: 16, 32 (default) or 64 .
         bool use_orientation = false; //sample patterns using keypoints orientation, disabled by default.
-        extractor = cv::xfeatures2d::BriefDescriptorExtractor::create();
+        extractor = cv::xfeatures2d::BriefDescriptorExtractor::create(bytes,use_orientation);
         
     }
     else if (descriptorType.compare("ORB") == 0)
@@ -97,7 +106,7 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
         int edgeThreshold = 31;//This is size of the border where the features are not detected. It should roughly match the patchSize parameter.
         int firstLevel = 0;//The level of pyramid to put source image to. Previous layers are filled with upscaled source image.
         int WTA_K = 2; //The number of points that produce each element of the oriented BRIEF descriptor. The default value 2 means the BRIEF where we take a random point pair and compare their brightnesses, so we get 0/1 response. Other possible values are 3 and 4. For example, 3 means that we take 3 random points (of course, those point coordinates are random, but they are generated from the pre-defined seed, so each element of BRIEF descriptor is computed deterministically from the pixel rectangle), find point of maximum brightness and output index of the winner (0, 1 or 2). Such output will occupy 2 bits, and therefore it will need a special variant of Hamming distance, denoted as NORM_HAMMING2 (2 bits per bin). When WTA_K=4, we take 4 random points to compute each bin (that will also occupy 2 bits with possible values 0, 1, 2 or 3).
-        int scoreType = ORB::HARRIS_SCORE; //if FAST_SCORE is used it produces slightly unstable keypoints, but it is a little faster to compute
+        cv::ORB::ScoreType scoreType = cv::ORB::HARRIS_SCORE; //if FAST_SCORE is used it produces slightly unstable keypoints, but it is a little faster to compute
         int patchSize = 31;//size of the patch used by the oriented BRIEF descriptor. Of course, on smaller pyramid layers the perceived image area covered by a feature will be larger.
         int fastThreshold = 20;//fast threshold
         extractor = cv::ORB::create(nfeatures,scaleFactor,nlevels,edgeThreshold,firstLevel,WTA_K,scoreType,patchSize,fastThreshold);
@@ -118,13 +127,13 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
     {
 
         //...
-        int descriptor_type = AKAZE::DESCRIPTOR_MLDB;//Type of the extracted descriptor: DESCRIPTOR_KAZE, DESCRIPTOR_KAZE_UPRIGHT, DESCRIPTOR_MLDB or DESCRIPTOR_MLDB_UPRIGHT.
+        cv::AKAZE::DescriptorType descriptor_type = cv::AKAZE::DESCRIPTOR_MLDB;//Type of the extracted descriptor: DESCRIPTOR_KAZE, DESCRIPTOR_KAZE_UPRIGHT, DESCRIPTOR_MLDB or DESCRIPTOR_MLDB_UPRIGHT.
         int descriptor_size = 0;//Size of the descriptor in bits. 0 -> Full size
         int descriptor_channels = 3;//	Number of channels in the descriptor (1, 2, 3)
         float threshold = 0.001f;//Detector response threshold to accept point
         int nOctaves = 4;//Maximum octave evolution of the image
         int nOctaveLayers = 4;//Default number of sublevels per scale level
-        int diffusivity = KAZE::DIFF_PM_G2;//Diffusivity type. DIFF_PM_G1, DIFF_PM_G2, DIFF_WEICKERT or DIFF_CHARBONNIER
+        cv::KAZE::DiffusivityType diffusivity = cv::KAZE::DIFF_PM_G2;//Diffusivity type. DIFF_PM_G1, DIFF_PM_G2, DIFF_WEICKERT or DIFF_CHARBONNIER
         extractor = cv::AKAZE::create(descriptor_type,descriptor_size,descriptor_channels,threshold,nOctaves,nOctaveLayers,diffusivity);
 
     }
@@ -187,7 +196,7 @@ void detKeypointsShiTomasi(vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool b
         cv::waitKey(0);
     }
 }
-void detKeypointsHarris(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool bVis=false)
+void detKeypointsHarris(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool bVis)
 {
     // Detector parameters
     int blockSize = 2;     // for every pixel, a blockSize × blockSize neighborhood is considered
@@ -232,13 +241,13 @@ void detKeypointsHarris(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool
 
 
 }
-void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std::string detectorType, bool bVis=false)
+void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std::string detectorType, bool bVis)
 {
     if (detectorType.compare("FAST") == 0)
     {
         int threshold = 10;
         bool nonmaxSuppression = true;
-        int type = cv::FastFeatureDetector::TYPE_9_16;
+        cv::FastFeatureDetector::DetectorType type = cv::FastFeatureDetector::TYPE_9_16;
         cv::Ptr<cv::FeatureDetector> detector = cv::FastFeatureDetector::create(threshold,nonmaxSuppression,type);
         double t = (double)cv::getTickCount();
         detector->detect(img, keypoints);
@@ -264,7 +273,7 @@ void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std:
         int edgeThreshold = 31;//This is size of the border where the features are not detected. It should roughly match the patchSize parameter.
         int firstLevel = 0;//The level of pyramid to put source image to. Previous layers are filled with upscaled source image.
         int WTA_K = 2; //The number of points that produce each element of the oriented BRIEF descriptor. The default value 2 means the BRIEF where we take a random point pair and compare their brightnesses, so we get 0/1 response. Other possible values are 3 and 4. For example, 3 means that we take 3 random points (of course, those point coordinates are random, but they are generated from the pre-defined seed, so each element of BRIEF descriptor is computed deterministically from the pixel rectangle), find point of maximum brightness and output index of the winner (0, 1 or 2). Such output will occupy 2 bits, and therefore it will need a special variant of Hamming distance, denoted as NORM_HAMMING2 (2 bits per bin). When WTA_K=4, we take 4 random points to compute each bin (that will also occupy 2 bits with possible values 0, 1, 2 or 3).
-        int scoreType = ORB::HARRIS_SCORE; //if FAST_SCORE is used it produces slightly unstable keypoints, but it is a little faster to compute
+        cv::ORB::ScoreType scoreType = cv::ORB::HARRIS_SCORE; //if FAST_SCORE is used it produces slightly unstable keypoints, but it is a little faster to compute
         int patchSize = 31;//size of the patch used by the oriented BRIEF descriptor. Of course, on smaller pyramid layers the perceived image area covered by a feature will be larger.
         int fastThreshold = 20;//fast threshold
         
@@ -276,13 +285,13 @@ void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std:
     }
     else if (detectorType.compare("AKAZE")==0)
     {
-        int descriptor_type = AKAZE::DESCRIPTOR_MLDB;//Type of the extracted descriptor: DESCRIPTOR_KAZE, DESCRIPTOR_KAZE_UPRIGHT, DESCRIPTOR_MLDB or DESCRIPTOR_MLDB_UPRIGHT.
+        cv::AKAZE::DescriptorType descriptor_type = cv::AKAZE::DESCRIPTOR_MLDB;//Type of the extracted descriptor: DESCRIPTOR_KAZE, DESCRIPTOR_KAZE_UPRIGHT, DESCRIPTOR_MLDB or DESCRIPTOR_MLDB_UPRIGHT.
         int descriptor_size = 0;//Size of the descriptor in bits. 0 -> Full size
         int descriptor_channels = 3;//	Number of channels in the descriptor (1, 2, 3)
         float threshold = 0.001f;//Detector response threshold to accept point
         int nOctaves = 4;//Maximum octave evolution of the image
         int nOctaveLayers = 4;//Default number of sublevels per scale level
-        int diffusivity = KAZE::DIFF_PM_G2;//Diffusivity type. DIFF_PM_G1, DIFF_PM_G2, DIFF_WEICKERT or DIFF_CHARBONNIER
+        cv::KAZE::DiffusivityType diffusivity = cv::KAZE::DIFF_PM_G2;//Diffusivity type. DIFF_PM_G1, DIFF_PM_G2, DIFF_WEICKERT or DIFF_CHARBONNIER
         cv::Ptr<cv::FeatureDetector> detector = cv::AKAZE::create(descriptor_type,descriptor_size,descriptor_channels,threshold,nOctaves,nOctaveLayers,diffusivity);
         double t = (double)cv::getTickCount();
         detector->detect(img, keypoints);
