@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/3.13.0-rc2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/3.13.0-rc2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/3.13.0-rc2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/3.13.0-rc2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2dbdb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2dbdb.dir/build.make CMakeFiles/cmTC_2dbdb.dir/build
-make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2dbdb.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_2dbdb.dir/testCCompiler.c.o   -c /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_2dbdb
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2dbdb.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2dbdb.dir/testCCompiler.c.o  -o cmTC_2dbdb 
-make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_bf702/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bf702.dir/build.make CMakeFiles/cmTC_bf702.dir/build
+make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bf702.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bf702.dir/testCCompiler.c.o   -c /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_bf702
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf702.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bf702.dir/testCCompiler.c.o  -o cmTC_bf702 
+make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_30434/fast"
-/usr/bin/make -f CMakeFiles/cmTC_30434.dir/build.make CMakeFiles/cmTC_30434.dir/build
-make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_30434.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_30434.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.13/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_30434
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30434.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_30434.dir/CMakeCCompilerABI.c.o  -o cmTC_30434 
+Run Build Command:"/usr/bin/make" "cmTC_89ead/fast"
+/usr/bin/make -f CMakeFiles/cmTC_89ead.dir/build.make CMakeFiles/cmTC_89ead.dir/build
+make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_89ead.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_89ead.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_89ead
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89ead.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_89ead.dir/CMakeCCompilerABI.c.o  -o cmTC_89ead 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_30434' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvb8Z5C.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_30434 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_30434.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_89ead' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBI2Z9h.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_89ead /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_89ead.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_30434/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_30434.dir/build.make CMakeFiles/cmTC_30434.dir/build]
-  ignore line: [make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_30434.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_30434.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_30434]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30434.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_30434.dir/CMakeCCompilerABI.c.o  -o cmTC_30434 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_89ead/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_89ead.dir/build.make CMakeFiles/cmTC_89ead.dir/build]
+  ignore line: [make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_89ead.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_89ead.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_89ead]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89ead.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_89ead.dir/CMakeCCompilerABI.c.o  -o cmTC_89ead ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_30434' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvb8Z5C.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_30434 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_30434.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_89ead' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBI2Z9h.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_89ead /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_89ead.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccvb8Z5C.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccBI2Z9h.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -109,7 +109,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_30434] ==> ignore
+    arg [cmTC_89ead] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -121,7 +121,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_30434.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_89ead.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -151,17 +151,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f41dd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f41dd.dir/build.make CMakeFiles/cmTC_f41dd.dir/build
-make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f41dd.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_f41dd.dir/feature_tests.c.o   -c /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_f41dd
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f41dd.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f41dd.dir/feature_tests.c.o  -o cmTC_f41dd 
-make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_d7fd2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d7fd2.dir/build.make CMakeFiles/cmTC_d7fd2.dir/build
+make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d7fd2.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_d7fd2.dir/feature_tests.c.o   -c /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_d7fd2
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7fd2.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d7fd2.dir/feature_tests.c.o  -o cmTC_d7fd2 
+make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -171,17 +171,17 @@ make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMake
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1fee0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1fee0.dir/build.make CMakeFiles/cmTC_1fee0.dir/build
-make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1fee0.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_1fee0.dir/feature_tests.c.o   -c /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_1fee0
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fee0.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1fee0.dir/feature_tests.c.o  -o cmTC_1fee0 
-make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_53f97/fast"
+/usr/bin/make -f CMakeFiles/cmTC_53f97.dir/build.make CMakeFiles/cmTC_53f97.dir/build
+make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_53f97.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_53f97.dir/feature_tests.c.o   -c /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_53f97
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53f97.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_53f97.dir/feature_tests.c.o  -o cmTC_53f97 
+make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -191,17 +191,17 @@ make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMake
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c9e20/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c9e20.dir/build.make CMakeFiles/cmTC_c9e20.dir/build
-make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c9e20.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_c9e20.dir/feature_tests.c.o   -c /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c9e20
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9e20.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c9e20.dir/feature_tests.c.o  -o cmTC_c9e20 
-make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_fa2f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fa2f7.dir/build.make CMakeFiles/cmTC_fa2f7.dir/build
+make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fa2f7.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_fa2f7.dir/feature_tests.c.o   -c /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_fa2f7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa2f7.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_fa2f7.dir/feature_tests.c.o  -o cmTC_fa2f7 
+make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -209,30 +209,30 @@ make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMake
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_68f41/fast"
-/usr/bin/make -f CMakeFiles/cmTC_68f41.dir/build.make CMakeFiles/cmTC_68f41.dir/build
-make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_68f41.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_68f41.dir/testCXXCompiler.cxx.o -c /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_68f41
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68f41.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_68f41.dir/testCXXCompiler.cxx.o  -o cmTC_68f41 
-make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_a4d38/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a4d38.dir/build.make CMakeFiles/cmTC_a4d38.dir/build
+make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a4d38.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_a4d38.dir/testCXXCompiler.cxx.o -c /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_a4d38
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4d38.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_a4d38.dir/testCXXCompiler.cxx.o  -o cmTC_a4d38 
+make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1eb92/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1eb92.dir/build.make CMakeFiles/cmTC_1eb92.dir/build
-make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1eb92.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_1eb92.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_1eb92
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1eb92.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_1eb92.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_1eb92 
+Run Build Command:"/usr/bin/make" "cmTC_89315/fast"
+/usr/bin/make -f CMakeFiles/cmTC_89315.dir/build.make CMakeFiles/cmTC_89315.dir/build
+make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_89315.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_89315.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_89315
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89315.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_89315.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_89315 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -242,23 +242,23 @@ Thread model: posix
 gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_1eb92' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9kc6Ju.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1eb92 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1eb92.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_89315' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQsFWNX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_89315 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_89315.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1eb92/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1eb92.dir/build.make CMakeFiles/cmTC_1eb92.dir/build]
-  ignore line: [make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_1eb92.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_1eb92.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_1eb92]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1eb92.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_1eb92.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_1eb92 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_89315/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_89315.dir/build.make CMakeFiles/cmTC_89315.dir/build]
+  ignore line: [make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_89315.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_89315.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_89315]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89315.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_89315.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_89315 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -268,13 +268,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_1eb92' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9kc6Ju.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1eb92 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1eb92.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_89315' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQsFWNX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_89315 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_89315.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc9kc6Ju.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccQsFWNX.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -292,7 +292,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_1eb92] ==> ignore
+    arg [cmTC_89315] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -304,7 +304,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_1eb92.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_89315.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -330,17 +330,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2e50b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2e50b.dir/build.make CMakeFiles/cmTC_2e50b.dir/build
-make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2e50b.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_2e50b.dir/feature_tests.cxx.o -c /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_2e50b
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e50b.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_2e50b.dir/feature_tests.cxx.o  -o cmTC_2e50b 
-make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_81b5c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_81b5c.dir/build.make CMakeFiles/cmTC_81b5c.dir/build
+make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_81b5c.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_81b5c.dir/feature_tests.cxx.o -c /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_81b5c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81b5c.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_81b5c.dir/feature_tests.cxx.o  -o cmTC_81b5c 
+make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -403,17 +403,17 @@ make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMake
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5e258/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5e258.dir/build.make CMakeFiles/cmTC_5e258.dir/build
-make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5e258.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_5e258.dir/feature_tests.cxx.o -c /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_5e258
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e258.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_5e258.dir/feature_tests.cxx.o  -o cmTC_5e258 
-make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_63b36/fast"
+/usr/bin/make -f CMakeFiles/cmTC_63b36.dir/build.make CMakeFiles/cmTC_63b36.dir/build
+make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_63b36.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_63b36.dir/feature_tests.cxx.o -c /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_63b36
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63b36.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_63b36.dir/feature_tests.cxx.o  -o cmTC_63b36 
+make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -476,17 +476,17 @@ make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMake
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e876c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e876c.dir/build.make CMakeFiles/cmTC_e876c.dir/build
-make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e876c.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_e876c.dir/feature_tests.cxx.o -c /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e876c
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e876c.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_e876c.dir/feature_tests.cxx.o  -o cmTC_e876c 
-make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_fd982/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd982.dir/build.make CMakeFiles/cmTC_fd982.dir/build
+make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fd982.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_fd982.dir/feature_tests.cxx.o -c /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_fd982
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd982.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_fd982.dir/feature_tests.cxx.o  -o cmTC_fd982 
+make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -549,17 +549,17 @@ make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMake
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4065c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4065c.dir/build.make CMakeFiles/cmTC_4065c.dir/build
-make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4065c.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_4065c.dir/feature_tests.cxx.o -c /home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_4065c
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4065c.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_4065c.dir/feature_tests.cxx.o  -o cmTC_4065c 
-make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Tracking/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_bffac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bffac.dir/build.make CMakeFiles/cmTC_bffac.dir/build
+make[1]: Entering directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bffac.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_bffac.dir/feature_tests.cxx.o -c /home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_bffac
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bffac.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_bffac.dir/feature_tests.cxx.o  -o cmTC_bffac 
+make[1]: Leaving directory '/home/workspace/SFND_2D_Feature_Matching/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

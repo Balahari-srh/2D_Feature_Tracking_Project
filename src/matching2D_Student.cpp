@@ -58,8 +58,8 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
         // TODO : implement k-nearest-neighbor matching
         double t = (double)cv::getTickCount();
         matcher->knnMatch(descSource, descRef, knn_matches,2); // Finds the best match for each descriptor in desc1
-        t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
-        cout << " (KNN) with n=" << knn_matches.size() << " matches in " << 1000 * t / 1.0 << " ms" << endl;
+        
+        
 
         // TODO : filter matches using descriptor distance ratio test
         const float ratio_thresh = 0.8f;
@@ -71,6 +71,8 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
                 matches.push_back(knn_matches[it][0]);
             }
         }
+        t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
+        cout << " (KNN) with n=" << knn_matches.size()-matches.size() << " matches in " << 1000 * t / 1.0 << " ms" << endl;
     }
 }
 

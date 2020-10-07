@@ -47,7 +47,7 @@ int main(int argc, const char *argv[])
         //cout<<"NOW USING DETECTOR: "<<detector[det_it]<<endl;
         //for(int desc_it=0;desc_it<6;desc_it++)
         //{
-        cout<<"NOW USING DETECTOR: "<<detector[6]<<" with DESCRIPTOR: "<<descriptor[3]<<endl;
+        //cout<<"NOW USING DETECTOR: "<<detector[6]<<" with DESCRIPTOR: "<<descriptor[3]<<endl;
         /* MAIN LOOP OVER ALL IMAGES */
         for (size_t imgIndex = 0; imgIndex <= imgEndIndex - imgStartIndex; imgIndex++)
             {
@@ -86,7 +86,7 @@ int main(int argc, const char *argv[])
 
                 // extract 2D keypoints from current image
                 vector<cv::KeyPoint> keypoints; // create empty feature list for current image
-                string detectorType = detector[0];//{"SHITOMASI","HARRIS", "FAST", "BRISK", "ORB", "AKAZE", "SIFT"};
+                string detectorType = detector[5];//{"SHITOMASI","HARRIS", "FAST", "BRISK", "ORB", "AKAZE", "SIFT"};
 
                 //// STUDENT ASSIGNMENT
                 //// TASK MP.2 -> add the following keypoint detectors in file matching2D.cpp and enable string-based selection based on detectorType
@@ -174,7 +174,7 @@ int main(int argc, const char *argv[])
                     vector<cv::DMatch> matches;
                     string matcherType = "MAT_BF";        // MAT_BF, MAT_FLANN
                     string descriptorType = "DES_BINARY"; // DES_BINARY, DES_HOG
-                    string selectorType = "SEL_NN";       // SEL_NN, SEL_KNN
+                    string selectorType = "SEL_KNN";       // SEL_NN, SEL_KNN
 
                     //// STUDENT ASSIGNMENT
                     //// TASK MP.5 -> add FLANN matching in file matching2D.cpp

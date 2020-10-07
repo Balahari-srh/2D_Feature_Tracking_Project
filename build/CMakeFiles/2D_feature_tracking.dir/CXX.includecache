@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/workspace/SFND_2D_Feature_Tracking/src/MidTermProject_Camera_Student.cpp
+/home/workspace/SFND_2D_Feature_Matching/src/MidTermProject_Camera_Student.cpp
 iostream
 -
 fstream
@@ -34,17 +34,17 @@ opencv2/xfeatures2d.hpp
 opencv2/xfeatures2d/nonfree.hpp
 -
 dataStructures.h
-/home/workspace/SFND_2D_Feature_Tracking/src/dataStructures.h
+/home/workspace/SFND_2D_Feature_Matching/src/dataStructures.h
 matching2D.hpp
-/home/workspace/SFND_2D_Feature_Tracking/src/matching2D.hpp
+/home/workspace/SFND_2D_Feature_Matching/src/matching2D.hpp
 
-/home/workspace/SFND_2D_Feature_Tracking/src/dataStructures.h
+/home/workspace/SFND_2D_Feature_Matching/src/dataStructures.h
 vector
 -
 opencv2/core.hpp
 -
 
-/home/workspace/SFND_2D_Feature_Tracking/src/matching2D.hpp
+/home/workspace/SFND_2D_Feature_Matching/src/matching2D.hpp
 stdio.h
 -
 iostream
@@ -72,7 +72,7 @@ opencv2/xfeatures2d.hpp
 opencv2/xfeatures2d/nonfree.hpp
 -
 dataStructures.h
-/home/workspace/SFND_2D_Feature_Tracking/src/dataStructures.h
+/home/workspace/SFND_2D_Feature_Matching/src/dataStructures.h
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp
