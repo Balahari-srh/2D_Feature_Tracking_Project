@@ -156,4 +156,10 @@ FAST      |   Brisk
 
 FAST + Brief achieves outperforms other combination of Detector-Descriptor combinations with minimal processing time(result of TASK 9) as well as with the most number of matches(result of TASK 8).
 
-The overall data used to evaluate task 7,8 and 9 is available at [Performance Evaluation!](https://github.com/Balahari-srh/2D_Feature_Tracking_Project/blob/master/Performance%20Evaluation/Final%20Results.ods)
+
+
+### Note
+
+- The overall data used to evaluate task 7,8 and 9 is available at [Performance Evaluation.](https://github.com/Balahari-srh/2D_Feature_Tracking_Project/blob/master/Performance%20Evaluation/Final%20Results.ods)
+- The result is added in three different sheets.
+- Additionally to run SIFT, please change the Norm type to NORM_L2 instead of NORM_HAMMING in line number 23 in matching2D_Student.cpp
